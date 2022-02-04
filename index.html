@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formularz kontaktowy</title>
+	<meta name="author" content="www.dreamfocus.pl">
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+<!--[if IE]>
+<p class="browserupgrade">Używasz <strong>nieaktualnej</strong> wersji przeglądarki. Zaktualizuj <a
+		href="https://browsehappy
+.com/">przeglądarkę</a> aby wszystko działało poprawnie i bezpiecznie.</p>
+<![endif]-->
+
+
+<section id="contact__section">
+	<div class="contact__container">
+		<div class="contact__header">
+			<a id="contact1"></a>
+			<h2 class="contact__title anchor_desktop_menu_link">Kontakt</h2>
+			<hr class="dec">
+			<p class="contact__text">Company Name
+				<br>Jan Kowalski
+				<br>ul.Kawowa 1
+				<br>03-950 Warszawa
+			</p>
+		</div>
+		<div class="contact__quick">
+			<div class="phone_wrapper">
+			<a href="tel:0048123123123" class="cta">+48 123 123 123</a>
+			</div>
+			<div class="mail_wrapper">
+			<a href="mailto:mail@mail.pl" class="cta">mail@mail.pl</a>
+			</div>
+			<div class="mail_wrapper">
+				<a href="https://companyname.pl" class="cta">www.companyname.pl</a>
+			</div>
+		</div>
+		<div class="contact__form">
+			<h3 class="contact__form--header">Formularz kontaktowy</h3>
+			<hr class="dec">
+			<form action="" method="post" id="my_form_id" >
+				<div class="form__group field">
+					<input type="text" class="form__field" placeholder="Imię i nazwisko:" name="person" id="person"/>
+					<label for="person" class="form__label">* Imię i nazwisko:</label>
+				</div>
+				<div class="form__group field">
+					<input type="email" class="form__field" placeholder="* Email:" name="email" id="email"/>
+					<label for="email" class="form__label">* Email:</label>
+				</div>
+				<div class="form__group field">
+					<input type="tel" class="form__field" placeholder="Telefon:" name="tel" id="tel"/>
+					<label for="tel" class="form__label">Telefon:</label>
+				</div>
+				<div class="form__group field">
+					<textarea class="form__field" placeholder="* Wiadomość:" name="message" id="message"/> </textarea>
+					<label for="message" class="form__label">* Wiadomość:</label>
+				</div>
+
+				<input type="checkbox" id="reg">
+				<br><input type="checkbox" id="agree" /><label class="for_agree" for="agree" id="agree_cb"> * Wyrażam zgodę na przetwarzanie powyższych danych w celu otrzymania odpowiedzi na przesłany formularz. Podanie danych jest dobrowolne, ale niezbędne do otrzymania odpowiedzi.</label>
+				<br>
+				<div id="formanswer"></div>
+				<div class="form_buttons">
+					<input type="submit" class="send" value="Wyślij">
+					<input type="reset" class="reset" id="reset_btn" value="Kasuj">
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/mail.js"></script>
+
+</body>
+</html>

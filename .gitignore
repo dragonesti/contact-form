@@ -1,0 +1,5 @@
+# ignore test
+.DS_Store
+.idea
+scss/.sass-cache
+js/.DS_Store
